@@ -1,4 +1,4 @@
-package com.gabrielsousa.hrworker;
+package com.gabrielsousa.hrpayroll;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

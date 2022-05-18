@@ -2,7 +2,7 @@ package com.gabrielsousa.hrpayroll.entities;
 
 import java.io.Serializable;
 
-public class Payment implements Serializable{
+public class Payment implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
 	private String name;

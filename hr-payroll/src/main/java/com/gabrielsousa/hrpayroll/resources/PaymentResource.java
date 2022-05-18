@@ -10,16 +10,15 @@ import org.springframework.web.bind.annotation.RestController;
 import com.gabrielsousa.hrpayroll.entities.Payment;
 import com.gabrielsousa.hrpayroll.services.PaymentService;
 
-//@Bean
 @RestController
-@RequestMapping(value = "/payments")
+@RequestMapping(value="/payments")
 public class PaymentResource {
-	
+
 	@Autowired
 	private PaymentService service;
 	
-	@GetMapping(value = "/{workerId}/days/{days}")
-	public ResponseEntity<Payment>getPayment(@PathVariable Long workerId, @PathVariable Integer days){
+	@GetMapping(value="/{workerId}/days/{days}")
+	public ResponseEntity<Payment> getPayment(@PathVariable Long workerId, @PathVariable Integer days){
 		Payment payment = service.getPayment(workerId, days);
 		return ResponseEntity.ok(payment);
 	}
