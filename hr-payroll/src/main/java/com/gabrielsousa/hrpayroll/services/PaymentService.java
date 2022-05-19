@@ -1,12 +1,17 @@
 package com.gabrielsousa.hrpayroll.services;
 
+import java.util.HashMap;
+import java.util.Map;
+
 //import java.util.HashMap;
 //import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 //import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 //import org.springframework.web.client.RestTemplate;
+import org.springframework.web.client.RestTemplate;
 
 import com.gabrielsousa.hrpayroll.entities.Payment;
 import com.gabrielsousa.hrpayroll.entities.Worker;
@@ -14,10 +19,11 @@ import com.gabrielsousa.hrpayroll.feignclients.WorkerFeignClient;
 
 @Service
 public class PaymentService {
-	
+
+//  ***Atributos para o RestTemplate***	
 //	@Value("${hr-worker.host}")
 //	private String workerHost;
-	
+//	
 //	@Autowired
 //	private RestTemplate restTemplate;
 	
