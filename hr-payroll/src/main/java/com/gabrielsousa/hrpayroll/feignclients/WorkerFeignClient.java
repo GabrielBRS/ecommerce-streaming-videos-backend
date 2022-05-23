@@ -11,10 +11,10 @@ import com.gabrielsousa.hrpayroll.entities.Worker;
 @Component
 
 //Somente Feign sem o Ribbon
-@FeignClient(name="hr-worker", url="localhost:8001", path = "/workers")
+//@FeignClient(name="hr-worker", url="localhost:8001", path = "/workers")
 
 //Feign com o Ribbon
-//@FeignClient(name="hr-worker", path = "/workers")
+@FeignClient(name="hr-worker", path = "/workers")
 public interface WorkerFeignClient {
 
 	@GetMapping(value="/{id}")
